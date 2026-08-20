@@ -1,0 +1,2 @@
+body { font-family: sans-serif; background: #1e1e2e; color: #f0f0f0; text-align: center; padding: 20px; } #app { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 20px; } 
+canvas { background: #2a2a3d; border: 2px solid #555; border-radius: 8px; } #panel { text-align: left; min-width: 220px; }

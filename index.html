@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+    <head>  
+        <meta charset="UTF-8" />  
+        <title>Henry — Controle por Voz</title>  
+        <link rel="stylesheet" href="style.css" /> 
+    </head> 
+
+    <body>  
+        <h1> Henry — Controle por Voz</h1>  
+        <div id="app">    
+
+            <div id="game-area">      
+                <canvas id="canvas" width="480" height="320"></canvas>      
+                <button id="start-btn">Ativar microfone</button>    
+            </div>    
+
+            <div id="panel">      
+                <h2>Painel de reconhecimento</h2>      
+                <p>Comando:<span id="command">—</span></p>      
+                <p>Confiança: <span id="confidence">—</span></p>      
+                <ul id="scores"></ul>    
+            </div>  
+
+        </div>  
+
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.11.0/dist/tf.min.js"></script>  
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/speech-commands@0.8.4/dist/speech-commands.min.js"></script>  
+        <!-- henry.js e recognizer.js antes do main.js, porque main.js usa funções dos outros dois -->  
+        <script src="henry.js"></script>  
+        <script src="recognizer.js"></script>  
+        <script src="main.js"></script> 
+
+    </body> 
+</html>
