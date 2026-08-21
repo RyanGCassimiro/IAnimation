@@ -1,5 +1,3 @@
-// Responsabilidade: ouvir o microfone e avisar quem estiver interessado quando um comando de voz for reconhecido com confiança
-
 const MODEL_URL = "https://teachablemachine.withgoogle.com/models/DIFOzA8Nk/"; // termina com "/"
 const THRESHOLD = 0.80;
 

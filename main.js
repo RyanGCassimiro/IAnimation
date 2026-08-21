@@ -1,13 +1,3 @@
-// main.js — feito em conjunto (Ryan + Wanessa)
-// Único arquivo que conhece os dois lados: liga a saída do
-// recognizer.js (startListening) na entrada do henry.js (executarAcao).
-//
-// Importante: o reconhecimento só começa quando o botão é clicado,
-// nunca automaticamente ao carregar a página — o navegador exige uma
-// ação do usuário pra liberar o microfone, e isso também deixa a
-// demonstração mais controlada na apresentação
-// (abre o site → clica → concede permissão → demonstra).
-
 const startButton = document.getElementById("start-btn");
 
 startButton.addEventListener("click", async () => {
